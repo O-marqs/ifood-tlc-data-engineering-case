@@ -1,0 +1,12 @@
+services:
+  ifood-case:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    environment:
+      DATA_DIR: /app/data
+      PYTHONUNBUFFERED: "1"
+    volumes:
+      - .:/app
+      - ./data:/app/data

@@ -1,0 +1,11 @@
+project_name: ifood_tlc_case
+default_year: 2023
+months: [1, 2, 3, 4, 5]
+primary_service_type: yellow
+supported_service_types: [yellow]
+
+paths:
+  landing: data/landing
+  bronze: data/bronze
+  silver: data/silver
+  gold: data/gold

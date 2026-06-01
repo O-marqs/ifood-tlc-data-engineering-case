@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ifood-tlc-case"
+version = "0.1.0"
+description = "NYC TLC yellow taxi data pipeline for the iFood Senior Data Engineer case."
+requires-python = ">=3.10"
+dependencies = [
+    "pyspark>=3.5,<4.0",
+    "PyYAML>=6.0,<7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0,<9.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

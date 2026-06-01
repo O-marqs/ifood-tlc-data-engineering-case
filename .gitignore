@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Spark
+spark-warehouse/
+metastore_db/
+derby.log
+*.crc
+_SUCCESS
+_committed_*
+_started_*
+
+# Local data and parquet files
+data/
+data/bronze/
+data/silver/
+data/gold/
+*.parquet
+*.snappy.parquet
+
+# Checkpoints and temporary outputs
+checkpoints/
+checkpoint/
+tmp/
+temp/
+*.checkpoint/
+
+# Local analysis output noise
+analysis/outputs/**/_temporary/
+analysis/outputs/**/*.parquet
+analysis/outputs/**/*.snappy.parquet
+analysis/outputs/**/.crc
+analysis/outputs/**/_SUCCESS
