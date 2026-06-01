@@ -1,8 +1,8 @@
-# iFood Senior Data Engineer Case - NYC TLC
+# Case - NYC TLC
 
 ## Resumo executivo
 
-Este projeto implementa uma solução de engenharia de dados para o case técnico de Senior Data Engineer - Chapter no iFood, usando os dados públicos NYC TLC Trip Record Data de janeiro a maio de 2023.
+Este projeto implementa uma solução de engenharia de dados para o case técnico, usando os dados públicos NYC TLC Trip Record Data de janeiro a maio de 2023.
 
 A solução organiza arquivos Parquet brutos em uma landing zone, processa os dados com PySpark nas camadas bronze, silver e gold, gera métricas de qualidade e disponibiliza consultas SQL/PySpark para responder às perguntas obrigatórias do case.
 
