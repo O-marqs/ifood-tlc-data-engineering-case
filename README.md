@@ -8,7 +8,7 @@ A solução organiza arquivos Parquet brutos em uma landing zone, processa os da
 
 O foco analítico é exclusivamente o dataset `yellow`, pois ele contém diretamente as colunas exigidas pelo enunciado: `VendorID`, `passenger_count`, `total_amount`, `tpep_pickup_datetime` e `tpep_dropoff_datetime`.
 
-## Objetivo do case
+## Objetivo
 
 Construir uma arquitetura simples, rastreável e explicável para:
 
@@ -493,17 +493,3 @@ Testes unitários validam paths e formatação de mês. Testes com Spark usam Da
 - Versionar outputs pequenos de `analysis/outputs/` quando úteis como evidência.
 - Adicionar validações formais de schema por versão.
 - Avaliar extensão para outros service types com contratos separados.
-
-## Conexão com atuação Senior Data Engineer/Chapter
-
-O projeto demonstra:
-
-- leitura crítica de escopo;
-- arquitetura em camadas;
-- rastreabilidade;
-- ausência de limpeza silenciosa;
-- qualidade de dados mensurável;
-- consumo analítico simples;
-- documentação de decisões;
-- testes automatizados;
-- compatibilidade local e Databricks.
