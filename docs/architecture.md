@@ -6,7 +6,7 @@ Este projeto usa uma arquitetura em camadas para processar os dados NYC TLC yell
 landing -> bronze -> silver -> gold
 ```
 
-O foco desta versão é exclusivamente `yellow`, porque as perguntas obrigatórias e as colunas exigidas pelo case pertencem diretamente a esse dataset. Green, FHV e FHVHV podem ser avaliados como extensões futuras, com contratos próprios.
+O foco desta versão é exclusivamente `yellow`, porque as perguntas obrigatórias e as colunas exigidas pelo case pertencem diretamente a esse dataset.
 
 ## Landing
 
@@ -16,7 +16,7 @@ Camada de arquivos brutos. Os Parquets devem ser mantidos no layout:
 data/landing/tlc/yellow/year={yyyy}/month={mm}/yellow_tripdata_{yyyy}-{mm}.parquet
 ```
 
-Também é possível baixar os arquivos primeiro em `data/landing/raw_downloads/` e organizá-los com:
+Também é possível baixar os arquivos primeiro em `data/landing/` e organizá-los com:
 
 ```bash
 python -m ifood_tlc.utils.organize_landing_files
